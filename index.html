@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head>
+   <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Login</title>       
-  
-  <style>                    
+  <title>Login</title>
+  <style>
     body { margin: 0; font-family: 'Segoe UI', sans-serif; }
     .navbar {
       display: flex;
@@ -63,6 +62,17 @@
       border: none;
     }
 
+    .btn-login a {
+    text-decoration: none; /* Removes the blue underline */
+    color: inherit; /* Inherits the color from the parent button */
+  }
+
+  .btn-login a:hover {
+    text-decoration: none; /* Ensures no underline on hover */
+    color: inherit; /* Keeps the color consistent on hover */
+  }
+
+
     .btn-get-started {
         background-image: linear-gradient(to right, #000108f9, #969599);
         color: #fff
@@ -70,6 +80,17 @@
     .btn-get-started:hover {
       background: linear-gradient(to right, #cdcad6, #000108f9);
     }
+
+    .btn-get-started a {
+    text-decoration: none; /* Removes the blue underline */
+    color: inherit; /* Inherits the color from the parent button */
+  }
+
+  .btn-get-started a:hover {
+    text-decoration: none; /* Ensures no underline on hover */
+    color: inherit; /* Keeps the color consistent on hover */
+  }
+
     @media (max-width: 700px) {
       .navbar {
         flex-direction: column;
@@ -87,27 +108,27 @@
       }
     }
   </style>
-</head>
-<body>
+   </head>
+         <body>
   <nav class="navbar">
     <div class="navbar-logo">Infinity Byte</div>
     <div class="navbar-links">
-      <a href="#">Home</a>
-      <a href="#">Features</a>
-      <a href="#">Pricing</a>
+      <a href="https://bit.ly/4cTGHmc">Home</a>
+      <a href="#">Links</a>
+      <a href="#">Jobs</a>
       <a href="#">Docs</a>
     </div>
     <div class="navbar-actions">
-      <button class="btn btn-login">Login</button>
-      <button class="btn btn-get-started">Get Started</button>
+      <button class="btn btn-login"><a href="https://bit.ly/42lmoKI">Apply for a job</a></button>
+      <button class="btn btn-get-started"><a href="#">Get Started</a></button>
     </div>
   </nav>
   <div style="height:120px"></div>
   <!-- Your page content would go here -->
-</body>
+         </body>
 
 
-    <body>
+         <body>
 <img src="https://www.pngitem.com/pimgs/m/2-24109_computer-icons-login-person-black-black-and-white.png" style="width:100px; height: 100px; border-radius: 199px;"> 
  <style>
     body{ 
@@ -153,6 +174,7 @@
   
   fieldset{
     border-radius: 5px;
+    width: 500px;
     padding: 50px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -161,7 +183,6 @@
     display: block;
     margin: 0 auto;
     background-image: linear-gradient(to right, #969599,#969599);
-    width: 500px;
     
   }
     
@@ -174,6 +195,11 @@
     margin: 0 auto;   
   }
   
+  .options{
+    margin: 5px;
+    padding-top: 1px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
 
   
  </style>
@@ -189,20 +215,40 @@
            
            
           <label class="label">Email</label><br>
-      <input type="email" name="email" class="bot" placeholder="E.g example@domain.com" required><br>
+      <input type="email" name="email" class="bot" placeholder="To contact you back" required><br>
   
-           
-          <label class="label">Bio(optional)</label><br>
-            <textarea name="message" placeholder="All about you" required></textarea><br><br>
   
+          <label class="label">Bio</label><br>
+          <textarea name="message" placeholder="All about you" required></textarea><br><br>
+  <hr>
+
+          <h1 class="options"><u>Job</u></h1>
+          <input type="checkbox">
+          <label>Social Media Marketing</label><br>
+    
+    
+          <input type="checkbox">
+          <label>Web Development</label><br>
+    
+          
+          <input type="checkbox">
+          <label>Game Development</label><br>
+          
+
+
+
       <!-- Honeypot Spam Protection -->
       <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
   
       <!-- Custom Confirmation / Success Page -->
-      <input type="hidden" name="redirect" value=""https://tixihix.github.io/hackathon">
+      <input type="hidden" name="redirect" value="">
   
-      <button type="submit" class="bot1" value="https://tixihix.github.io/hackathon/" required>Login</button><br>                                                                                                                                            
+      <button type="submit" class="bot1" value="https://tixihix.github.io/hackathon/" required>Apply</button><br>
       </form>
-        </fieldset>    
-    </body>
-    </html>
+        </fieldset>
+  
+  
+  
+      
+        </body>
+</html>
